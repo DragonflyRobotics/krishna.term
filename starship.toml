@@ -1,1 +1,107 @@
-/home/krishnashah/.config/starship.toml
+#--------[ LORENS OSMAN ]--------#
+
+#--------[ starship_theLine ]
+
+format = """
+${custom.user}\
+[━━━](#eed49f bold)\
+${custom.host}\
+[━━](fg:#494d64 bold)\
+${custom.dir}\
+[━━](fg:#494d64 bold)\
+${custom.git}\
+[━━](fg:#494d64 bold)\
+${custom.rust}\
+$fill\
+$line_break\
+$username\
+$hostname\
+${custom.directory}\
+[ ](fg:#494d64 bold)\
+$git_branch\
+[ ](fg:#494d64 bold)\
+$rust\
+$python
+$character
+"""
+
+#--------[CUSTOM COMMANDS]
+
+[custom.directory]
+description = "Replace the default directory command"
+command = """echo "${PWD/$HOME/~}" """
+style = "fg:#a6da95"  # Green
+format = "[  󰉋 $output]($style)"
+when = "true"
+
+[custom.dir]
+description = "The line above custom directory"
+command = """echo $(pwd | sed "s|$HOME|~|") | wc -m | tr -d '\\n' | xargs -I {} seq -s '━' {} | tr -d '[:digit:]' """
+style = "fg:#a6da95"  # Green
+format = "[━━$output]($style)"
+when = "true"
+
+[custom.user]
+description = "The line above username"
+command = "echo $USER 2>/dev/null | wc -m | tr -d '\\n' | xargs -I {} seq -s '━' {} | tr -d '[:digit:]' "
+style = "#c6a0f6 bold"  # Mauve
+format = "[$output]($style)"
+when = "true"
+
+[custom.host]
+description = "The line above hostname"
+command = "echo $HOST 2>/dev/null | wc -m | tr -d '\\n' | xargs -I {} seq -s '━' {} | tr -d '[:digit:]' "
+style = "#ed8796 bold"  # Red
+format = "[$output]($style)"
+when = "true"
+
+[custom.git]
+description = "The line above branch name"
+command = "git rev-parse --abbrev-ref HEAD 2>/dev/null | wc -m | tr -d '\\n' | xargs -I {} seq -s '━' {} | tr -d '[:digit:]'| awk '{print $0 \"━━\"}'"
+when = "git rev-parse --abbrev-ref HEAD 2>/dev/null"
+shell = ["bash", "--noprofile", "--norc"]
+style = "fg:#f5a97f"  # Peach
+format = "[$output]($style)"
+
+#--------[COMMANDS]
+
+[username]
+style_user = '#c6a0f6 bold'  # Mauve
+style_root = '#f4dbd6 bold'  # Rosewater
+format = '[$user]($style)[ @ ](#eed49f bold)'  # Yellow for '@'
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = '[$ssh_symbol](bold #8aadf4)[$hostname](bold #ed8796)'  # Blue for SSH, red for hostname
+trim_at = '.companyname.com'
+disabled = false
+
+[fill]
+symbol="━"
+style = "fg:#494d64 bold"  # Surface1
+
+[line_break]
+disabled = false
+
+[character]
+success_symbol ='[ ━━](bold #a6da95)'  # Green
+error_symbol ='[✖ ](bold #ed8796)'  # Red
+
+#--------[GIT COMMANDS]
+
+[git_branch]
+symbol = " "
+style = "bold fg:#f5a97f"  # Peach
+format = "[ $symbol$branch(:$remote_branch) ]($style)"
+
+
+
+
+[python]
+format = '\[[󰌠 ${pyenv_prefix}(${version})(\($virtualenv\))]($style)\]'
+
+[rust]
+format = '\[[󱘗 ($version)]($style)\]'
+
