@@ -21,7 +21,18 @@ ${custom.directory}\
 $git_branch\
 [ ](fg:#494d64 bold)\
 $rust\
-$python
+$python\
+$cmake\
+$conda\
+$golang\
+$gradle\
+$java\
+$kotlin\
+$lua\
+$nodejs\
+$sudo\
+$swift\
+$zig
 $character
 """
 
