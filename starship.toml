@@ -105,3 +105,38 @@ format = '\[[󰌠 ${pyenv_prefix}(${version})(\($virtualenv\))]($style)\]'
 [rust]
 format = '\[[󱘗 ($version)]($style)\]'
 
+[c]
+format = '\[[󰙱 ($version(-$name))]($style)\]'
+
+[cmake]
+format = '\[[ ($version)]($style)\]'
+
+[conda]
+format = '\[[$symbol$environment]($style)\]'
+
+[golang]
+format = '\[[󰟓 ($version)]($style)\]'
+
+[gradle]
+format = '\[[ ($version)]($style)\]'
+
+[java]
+format = '\[[ ($version)]($style)\]'
+
+[kotlin]
+format = '\[[ ($version)]($style)\]'
+
+[lua]
+format = '\[[󰢱 ($version)]($style)\]'
+
+[nodejs]
+format = '\[[ ($version)]($style)\]'
+
+[sudo]
+format = '\[[as $symbol]($style)\]'
+
+[swift]
+format = '\[[ ($version)]($style)\]'
+
+[zig]
+format = '\[[ ($version)]($style)\]'
