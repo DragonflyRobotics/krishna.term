@@ -1,0 +1,57 @@
+[font]
+normal.family = "CaskaydiaCoveNerdFont"
+normal.style = "Regular"
+bold.family = "CaskaydiaCoveNerdFont"
+bold.style = "Bold"
+italic.family = "CaskaydiaCoveNerdFont"
+italic.style = "Italic"
+bold_italic.family = "CaskaydiaCoveNerdFont"
+bold_italic.style = "Bold Italic"
+
+[window]
+dynamic_title = true
+decorations = "buttonless"
+dynamic_padding = false
+opacity = 1.0
+startup_mode = "Fullscreen"
+
+[terminal]
+# Use tmux as the default terminal multiplexer
+shell = "/usr/bin/tmux"
+
+[env]
+TERM = "xterm-256color"
+
+
+[keyboard]
+bindings = [
+    # Toggle fullscreen mode
+    { key = "F11", action = "ToggleFullscreen" },
+    { key = "Tab", mods = "Control", chars = "\u001b[27;5;9~" },
+    { key = "Tab", mods = "Control|Shift", chars = "\u001b[27;6;9~" },
+]
+
+[colors.bright]
+black = "#444b6a"
+blue = "#7da6ff"
+cyan = "#0db9d7"
+green = "#b9f27c"
+magenta = "#bb9af7"
+red = "#ff7a93"
+white = "#acb0d0"
+yellow = "#ff9e64"
+
+[colors.normal]
+black = "#32344a"
+blue = "#7aa2f7"
+cyan = "#449dab"
+green = "#9ece6a"
+magenta = "#ad8ee6"
+red = "#f7768e"
+white = "#787c99"
+yellow = "#e0af68"
+
+[colors.primary]
+# background = "#1a1b26"
+foreground = "#a9b1d6"
+
