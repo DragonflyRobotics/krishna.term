@@ -1,9 +1,9 @@
 [font]
-normal.family = "CaskaydiaCoveNerdFont"
+normal.family = "CascadiaCodeNF"
 normal.style = "Regular"
-bold.family = "CaskaydiaCoveNerdFont"
+bold.family = "CascadiaCodeNF"
 bold.style = "Bold"
-italic.family = "CaskaydiaCoveNerdFont"
+italic.family = "CascadiaCodeNF"
 italic.style = "Italic"
 bold_italic.family = "CaskaydiaCoveNerdFont"
 bold_italic.style = "Bold Italic"
