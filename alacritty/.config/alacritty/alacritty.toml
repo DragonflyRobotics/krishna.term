@@ -27,8 +27,9 @@ TERM = "xterm-256color"
 bindings = [
     # Toggle fullscreen mode
     { key = "F11", action = "ToggleFullscreen" },
-    { key = "Tab", mods = "Control", chars = "\u001b[27;5;9~" },
-    { key = "Tab", mods = "Control|Shift", chars = "\u001b[27;6;9~" },
+    { key = "Tab", mods = "Control", chars = "\u0001n" },
+    { key = "Tab", mods = "Control|Shift", chars = "\u0001p" },
+    { key = "T", mods = "Control|Shift", chars = "\u0001c" } # \u0001 is Ctrl-A (tmux prefix)
 ]
 
 [colors.bright]
