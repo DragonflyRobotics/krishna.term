@@ -32,3 +32,4 @@ alias cat="bat"
 # Initialize Starship prompt
 eval "$(starship init zsh)"
 
+source <(fzf --zsh)
