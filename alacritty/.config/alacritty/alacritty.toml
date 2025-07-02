@@ -5,7 +5,7 @@ bold.family = "CascadiaCodeNF"
 bold.style = "Bold"
 italic.family = "CascadiaCodeNF"
 italic.style = "Italic"
-bold_italic.family = "CaskaydiaCoveNerdFont"
+bold_italic.family = "CascadiaCodeNF"
 bold_italic.style = "Bold Italic"
 
 [window]
