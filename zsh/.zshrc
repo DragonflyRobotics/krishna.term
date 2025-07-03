@@ -33,3 +33,5 @@ alias cat="bat"
 eval "$(starship init zsh)"
 
 source <(fzf --zsh)
+
+. "$HOME/.cargo/env"
