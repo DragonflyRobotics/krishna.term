@@ -34,7 +34,7 @@ eval "$(starship init zsh)"
 source <(fzf --zsh)
 eval "$(zoxide init zsh)"
 
-alias z="cd"
+alias cd="z"
 alias cat="bat"
 
 . "$HOME/.cargo/env"
