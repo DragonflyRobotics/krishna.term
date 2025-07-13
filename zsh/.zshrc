@@ -38,3 +38,8 @@ alias cd="z"
 alias cat="bat"
 
 . "$HOME/.cargo/env"
+
+# Created by `pipx` on 2025-07-06 21:54:44
+export PATH="$PATH:/home/kshah/.local/bin"
+
+# eval "$(/home/kshah/Documents/Github/uv/target/debug/uv envy init zsh)"
