@@ -36,10 +36,9 @@ eval "$(zoxide init zsh)"
 
 alias cd="z"
 alias cat="bat"
+alias ls="eza"
 
 . "$HOME/.cargo/env"
 
-# Created by `pipx` on 2025-07-06 21:54:44
-export PATH="$PATH:/home/kshah/.local/bin"
-
-# eval "$(/home/kshah/Documents/Github/uv/target/debug/uv envy init zsh)"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="/usr/local/cuda/bin:$PATH"
