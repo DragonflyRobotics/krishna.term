@@ -36,13 +36,9 @@ eval "$(zoxide init zsh)"
 
 alias cd="z"
 alias cat="bat"
+alias ls="eza"
 
 . "$HOME/.cargo/env"
 
-# Created by `pipx` on 2025-07-06 21:54:44
-export PATH="$PATH:/home/kshah/.local/bin"
-export PATH="$PATH:/usr/local/cuda/bin"
-
-# eval "$(/home/kshah/Documents/Github/uv/target/debug/uv envy init zsh)"
-
-if [ -e /home/kshah/.nix-profile/etc/profile.d/nix.sh ]; then . /home/kshah/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="/usr/local/cuda/bin:$PATH"
