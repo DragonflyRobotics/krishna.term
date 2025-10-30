@@ -90,7 +90,7 @@ trim_at = '.companyname.com'
 disabled = false
 
 [fill]
-symbol="━"
+symbol="" #"━"
 style = "fg:#494d64 bold"  # Surface1
 
 [line_break]
