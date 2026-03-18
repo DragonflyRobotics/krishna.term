@@ -27,6 +27,8 @@ EOBUNDLES
 
 antigen apply
 
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="/usr/local/cuda/bin:$PATH"
 
 # Initialize Starship prompt
 eval "$(starship init zsh)"
@@ -40,8 +42,6 @@ alias ls="eza"
 
 . "$HOME/.cargo/env"
 
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="/usr/local/cuda/bin:$PATH"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
@@ -113,3 +113,5 @@ zle -N fuzzy_script_widget
 # Bind Ctrl+S to it
 bindkey '^S' fuzzy_script_widget
 
+
+export PATH=$PATH:/home/kshah/.spicetify

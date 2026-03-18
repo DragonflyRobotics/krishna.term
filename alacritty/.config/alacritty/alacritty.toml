@@ -10,10 +10,10 @@ bold_italic.style = "Bold Italic"
 
 [window]
 dynamic_title = true
-decorations = "buttonless"
+#decorations = "buttonless"
 dynamic_padding = false
-opacity = 0.5
-startup_mode = "Maximized"
+#opacity = 0.5
+#startup_mode = "Maximized"
 
 [terminal]
 # Use tmux as the default terminal multiplexer
