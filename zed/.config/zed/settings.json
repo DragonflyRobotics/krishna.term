@@ -7,6 +7,37 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent": {
+    "inline_assistant_model": {
+      "provider": "zed.dev",
+      "model": "gpt-5-mini",
+      "enable_thinking": false
+    },
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5.3-codex",
+      "enable_thinking": false,
+      "effort": "high"
+    },
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "search": {
+    "case_sensitive": false,
+    "regex": true
+  },
+  "use_smartcase_search": true,
+  "minimap": {
+    "show": "auto"
+  },
+  "relative_line_numbers": "enabled",
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 0
+    }
+  },
+  "buffer_font_family": "Cascadia Code NF",
+  "auto_update": true,
   "icon_theme": "Colored Zed Icons Theme Light",
   "telemetry": {
     "diagnostics": false,
@@ -20,4 +51,125 @@
     "light": "One Light",
     "dark": "Catppuccin Mocha (Blur) [Heavy]",
   },
+  "experimental.theme_overrides": {
+    "syntax": {
+      "attribute": {
+        "font_style": "italic"
+      },
+      "boolean": {
+        "font_style": "italic"
+      },
+      "comment": {
+        "font_style": "italic"
+      },
+      "comment.doc": {
+        "font_style": "italic"
+      },
+      "constant": {
+        "font_style": "italic"
+      },
+      "constructor": {
+        "font_style": "italic"
+      },
+      "embedded": {
+        "font_style": "italic"
+      },
+      "emphasis": {
+        "font_style": "italic"
+      },
+      "emphasis.strong": {
+        "font_style": "italic"
+      },
+      "enum": {
+        "font_style": "italic"
+      },
+      // "function": {
+      //   "font_style": "italic"
+      // },
+      "hint": {
+        "font_style": "italic"
+      },
+      "keyword": {
+        "font_style": "italic"
+      },
+      "label": {
+        "font_style": "italic"
+      },
+      "link_text": {
+        "font_style": "italic"
+      },
+      "link_uri": {
+        "font_style": "italic"
+      },
+      "number": {
+        "font_style": "italic"
+      },
+      "operator": {
+        "font_style": "italic"
+      },
+      "predictive": {
+        "font_style": "italic"
+      },
+      "preproc": {
+        "font_style": "italic"
+      },
+      "primary": {
+        "font_style": "italic"
+      },
+      "property": {
+        "font_style": "italic"
+      },
+      "punctuation": {
+        "font_style": "italic"
+      },
+      "punctuation.bracket": {
+        "font_style": "italic"
+      },
+      "punctuation.delimiter": {
+        "font_style": "italic"
+      },
+      "punctuation.list_marker": {
+        "font_style": "italic"
+      },
+      "punctuation.special": {
+        "font_style": "italic"
+      },
+      "string": {
+        "font_style": "italic"
+      },
+      "string.escape": {
+        "font_style": "italic"
+      },
+      "string.regex": {
+        "font_style": "italic"
+      },
+      "string.special": {
+        "font_style": "italic"
+      },
+      "string.special.symbol": {
+        "font_style": "italic"
+      },
+      "tag": {
+        "font_style": "italic"
+      },
+      "text.literal": {
+        "font_style": "italic"
+      },
+      "title": {
+        "font_style": "italic"
+      },
+      "type": {
+        "font_style": "italic"
+      },
+      // "variable": {
+      //   "font_style": "italic"
+      // },
+      "variable.special": {
+        "font_style": "italic"
+      },
+      "variant": {
+        "font_style": "italic"
+      }
+    }
+  }
 }

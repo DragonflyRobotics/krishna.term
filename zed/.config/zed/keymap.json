@@ -15,13 +15,49 @@
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
-      // "j k": "vim::NormalBefore"
+      "j j": "vim::NormalBefore"
     },
   },
   {
     "context": "Workspace",
     "bindings": {
       "space f f": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-f": "editor::Format"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "space p v": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-t": "diagnostics::Deploy"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-z t": "assistant::InlineAssist"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-z c": "agent::ToggleFocus"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-z z": "workspace::ToggleRightDock"
     }
   }
 ]
