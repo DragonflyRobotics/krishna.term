@@ -7,6 +7,17 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "ssh_connections": [
+    {
+      "host": "ls6.tacc.utexas.edu",
+      "username": "kshah44",
+      "args": [],
+      "projects": []
+    }
+  ],
+  "collaboration_panel": {
+      "button": false,
+  },
   "agent": {
     "inline_assistant_model": {
       "provider": "zed.dev",

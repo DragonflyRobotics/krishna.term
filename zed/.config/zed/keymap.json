@@ -31,12 +31,6 @@
     }
   },
   {
-    "context": "Workspace",
-    "bindings": {
-      "space p v": "workspace::ToggleLeftDock"
-    }
-  },
-  {
     "context": "Editor",
     "bindings": {
       "ctrl-t": "diagnostics::Deploy"

@@ -75,7 +75,7 @@ export SDKMAN_DIR="$HOME/.sdkman"
 #
 #
 
-SCRIPT_DIR="$HOME/.local/scripts"
+SCRIPT_DIR="$HOME/.local/scripts/"
 
 fuzzy_script_widget() {
   local selected args_line cmd first_arg_pos
